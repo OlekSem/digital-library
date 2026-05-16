@@ -7,9 +7,9 @@ function App() {
 
   return (
     <BrowserRouter>
-        <nav className={"nav nav-fill bg-dark"}>
-            <Link className={"nav-link text-light"} to="/">Home</Link>
-            <Link className={"nav-link text-light"} to="/books">All books</Link>
+        <nav className={"navbar nav-fill navbar-dark bg-light"}>
+            <Link className={"nav-link nav-item"} to="/">Home</Link>
+            <Link className={"nav-link nav-item"} to="/books">All books</Link>
         </nav>
 
         <Routes>
