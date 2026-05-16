@@ -23,13 +23,14 @@ const AllBooks = () => {
     }, [])
 
     return (
-        <>
-            <h2>All Books available</h2>
-            <table style={{"border": "solid 1px "}}>
+        <div className={"container mt-2"}>
+            <h1 className={"text-center"}>All Books available for free</h1>
+            <table className={"table table-bordered"}>
                 <thead>
                 <tr>
                     <th>Title</th>
                     <th>Author</th>
+                    <th>Link</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -37,12 +38,12 @@ const AllBooks = () => {
                     <tr>
                         <td>{book.title}</td>
                         <td>{book.author}</td>
-                        <td><Link to={`/book/${book.id}`}>Go to the book</Link></td>
+                        <td><Link className={"link-info"} to={`/book/${book.id}`}>Go to the book</Link></td>
                     </tr>
                 )}
                 </tbody>
             </table>
-        </>
+        </div>
     )
 }
 
